@@ -18,7 +18,7 @@
             <Image
                 Source="salon.png"
                 SemanticProperties.Description="Cute dog bot waving hi to you!"
-                HeightRequest="200"
+                HeightRequest="300"
                 HorizontalOptions="End" />
 
             
