@@ -7,6 +7,7 @@
     <StackLayout Margin="20">
         <Editor Placeholder="Enter the description of the appointment list"
  Text="{Binding Description}"
+                
  HeightRequest="100" >
             <Editor.Behaviors>
                 <local:ValidationBehaviour />
@@ -23,7 +24,7 @@
         <ListView x:Name="listView" Margin="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Detail="{Binding Description}" />
+                    <TextCell Detail="{Binding Description}"  />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

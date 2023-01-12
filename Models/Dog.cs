@@ -15,8 +15,6 @@ namespace Dog_Grooming_App.Models
 
             [MaxLength(250), Unique]
             public string Name { get; set; }
-            public string Breed { get; set; }
-            public int Age { get; set; }
             public string Description { get; set; }
             [OneToMany] 
             public List<DogList> DogLists { get; set; }

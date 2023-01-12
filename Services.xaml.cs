@@ -5,6 +5,8 @@ public partial class Services : ContentPage
 {
 
     public List<Service> services { get; set; }
+
+
     public Services()
     {
         InitializeComponent();

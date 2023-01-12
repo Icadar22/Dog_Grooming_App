@@ -15,5 +15,6 @@ namespace Dog_Grooming_App.Models
         [MaxLength(250), Unique]
         public string Description { get; set; }
         public DateTime Date { get; set; }
+      
     }
 }

@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <StackLayout Margin="20">
             <Editor Placeholder="Enter Dog name" Margin="20" Text="{Binding Description}" HeightRequest="50" />
+            
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -18,16 +19,19 @@
                 </Grid.ColumnDefinitions>
                 <Button Text="Save" MaximumWidthRequest="200" Clicked="OnSaveButtonClicked" />
                 <Button Grid.Column="1" Text="Delete" MaximumWidthRequest="200" Clicked="OnRemoveButtonClicked"/>
-                <ListView Grid.Row="1" Grid.Column="0" x:Name="listView" Margin="20" IsRefreshing="True" >
+                <ListView Grid.Row="1" Grid.Column="0" x:Name="listView"   Margin="20" IsRefreshing="True" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Description}" />
+                            <TextCell Text="{Binding Description}"  />
                         </DataTemplate>
                     </ListView.ItemTemplate>
+                    
                 </ListView>
                 <Button Grid.Row="2" Grid.Column="0" Text="Add to  List" MaximumWidthRequest="200" Clicked="OnAddButtonClicked" />
                 
             </Grid>
+            
+
         </StackLayout>
     </ContentPage.Content>
 

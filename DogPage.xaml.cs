@@ -1,5 +1,6 @@
 using Dog_Grooming_App.Models;
 using Dog_Grooming_App.Data;
+
 namespace Dog_Grooming_App;
 
 public partial class DogPage : ContentPage
