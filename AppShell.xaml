@@ -9,6 +9,7 @@
     <TabBar>
         <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" />
         <ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Services" ContentTemplate="{DataTemplate local:Services}" />
         <ShellContent Title="Appointments" ContentTemplate="{DataTemplate local:AppointmentEntryPage}" />
     </TabBar>
 

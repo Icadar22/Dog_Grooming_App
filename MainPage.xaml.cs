@@ -20,5 +20,7 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    //private async void OnCounterBtnClicked(object sender, EventArgs e){await Navigation.PushAsync(new DogPage());}
 }
 

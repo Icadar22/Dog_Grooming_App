@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dog_Grooming_App.Services"
+             Title="Services">
+    <ListView ItemsSource="{Binding services}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Padding="30">
+                        <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100"  />
+                        <StackLayout Margin="20,0,20,0">
+                            <Label Text="{Binding Name}" FontAttributes="Bold" Padding="10" FontSize="Medium" FontFamily="Verdana"/>
+                            <Label Text="{Binding Details}" Padding="10"/>
+                            <Label Text="{Binding Price, StringFormat='Pret: {0} RON'}" Padding="10"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

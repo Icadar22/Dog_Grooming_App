@@ -2,13 +2,79 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dog_Grooming_App.AboutPage"
-             Title="AboutPage">
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Image Source="dog.png" SemanticProperties.Description="Dog Salon" HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="Appointments" VerticalOptions="End" />
-            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
-        </HorizontalStackLayout>
-        <Label Text="This app will help you to manage your dog appointments" />
-    </VerticalStackLayout>
+             Title="About">
+    <StackLayout>
+        <Label Text="Bine ați venit la salonul nostru The Good Dog!"
+               HorizontalOptions="Center"
+               FontSize="18"
+               FontFamily="Verdana"
+               Padding="20"/>
+        <Label Text="Oferim o gamă largă de servicii, inclusiv îmbăiere, tunsoare și tunderea unghiilor pentru prietenul tău blănos."
+               HorizontalOptions="Center"
+               FontSize="14"
+               FontFamily="Verdana"
+               Padding="10"
+               />
+        <Label Text="Salonul nostru are, de asemenea, o zonă confortabilă de așteptare pentru proprietarii de animale de companie și o zonă de joacă pentru câini. "
+         HorizontalOptions="Center"
+           FontSize="14" 
+         FontFamily="Verdana"
+               />
+        <Label Text=" Vă rugăm să nu ezitați să ne contactați pentru a programa o întâlnire."
+         HorizontalOptions="Center"
+           FontSize="14" 
+         FontFamily="Verdana"
+               Padding="10"
+               />
+        
+        <Image
+            
+                Source="dog.png"
+                SemanticProperties.Description="Cute dog bot waving hi to you!"
+                HeightRequest="250"
+                HorizontalOptions="Center" />
+        
+
+
+        <StackLayout Orientation="Horizontal" Margin="10,20,20,0" HorizontalOptions="Center" >
+            <Label Text="Address: " 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="10,0,0,0"
+                   FontSize="12"
+                   />
+            <Label Text="Oras: Cluj-Napoca, Strada: Venus, Nr: 22A" 
+                   TextColor="Black"
+                   Margin="10,0,0,0"
+                   FontSize="12"
+                   />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10,20,20,0"   HorizontalOptions="Center">
+            <Label Text="Phone: " 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="10,0,0,0"
+                   FontSize="12"
+                   />
+            <Label Text=" 0743969458" 
+                   TextColor="Black"
+                   Margin="10,0,0,0"
+                   FontSize="12"
+                   />
+        </StackLayout >
+        <StackLayout Orientation="Horizontal" Margin="10,20,20,0" HorizontalOptions="Center">
+            <Label Text="Email: " 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="10,0,0,0"
+                   FontSize="12"
+                   />
+            <Label Text=" dog_grooming@gmail.com" 
+                   TextColor="Black"
+                   Margin="10,0,0,0"
+                   FontSize="12"
+                   />
+        </StackLayout>
+    </StackLayout>
+
 </ContentPage>
